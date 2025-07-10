@@ -30,4 +30,8 @@ public class Node<T> {
         this.next = node;
     }
     
+    @Override
+    public String toString() {
+        return String.valueOf(value.toString());
+    }
 }
