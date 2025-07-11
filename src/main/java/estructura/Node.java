@@ -1,6 +1,6 @@
 package estructura;
 
-public class Node<T> {
+public class Node<T extends Comparable<T>> {
     private T value;
     private Node<T> next;
     
@@ -32,6 +32,6 @@ public class Node<T> {
     
     @Override
     public String toString() {
-        return String.valueOf(value.toString());
+        return value == null ? "null" : value.toString();
     }
 }
